@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Loop</title>
 </head>
 <body>
 <c:forEach var="i" begin="5" end="20">  
