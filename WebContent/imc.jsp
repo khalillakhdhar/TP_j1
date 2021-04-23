@@ -9,15 +9,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<c:set var="poid" scope="session" value="150"/>  
-<c:set var="taille" scope="session" value="1.80"/>  
+<c:set var="poid" scope="session" value="66"/>  
+<c:set var="taille" scope="session" value="1.90"/>  
 <c:set var="imc" scope="session" value="${poid/(taille*taille)}"/>  
 
 <p>votre IMC est : <c:out value="${imc}"/></p>  
 <c:choose>  
     <c:when test="${imc <= 20}">  
 Maigre    </c:when>  
-    <c:when test="${imc > 30}">  
+    <c:when test="${imc > 25}">  
         Surpoid.  
     </c:when>  
     <c:otherwise>  
